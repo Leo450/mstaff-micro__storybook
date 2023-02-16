@@ -10,5 +10,13 @@ module.exports = {
 		'@storybook/addon-essentials',
 		'@storybook/addon-interactions'
 	],
-	'framework': '@storybook/vue'
+	'framework': '@storybook/vue',
+	webpackFinal: async (config, { configType }) => {
+		config.output.publicPath = '/storybook'
+		return config
+	},
+	managerWebpack: async (config) => {
+		config.output.publicPath = '/storybook'
+		return config
+	}
 }
