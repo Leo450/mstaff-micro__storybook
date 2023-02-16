@@ -1,0 +1,108 @@
+@import "../variables/colors";
+
+.FormInput {
+
+	&__wrapper {
+		position: relative;
+		display: flex;
+		align-items: center;
+		border-radius: 4px;
+		background-color: $white;
+	}
+
+	&__label {
+		position: absolute;
+		left: 14px;
+		top: 50%;
+		margin-bottom: 0;
+		color: $grey-20;
+		line-height: 1;
+		transform: translateY(-50%);
+		pointer-events: none;
+		transition: all .2s ease;
+		overflow: hidden;
+		z-index: 1;
+	}
+
+	&__fieldset {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 0 8px;
+		border: 1px solid $grey-10;
+		border-radius: inherit;
+		pointer-events: none;
+
+		legend {
+			float: none;
+			width: 0;
+			height: 0;
+			margin: 0;
+			padding: 0;
+			color: $grey-20;
+			font-size: .75em;
+			overflow: hidden;
+		}
+	}
+
+	&__legend {
+		margin-bottom: 0;
+		font-size: .75em;
+	}
+
+	&__errors {
+		font-size: .75em;
+		color: $danger;
+	}
+
+}
+
+.FormInput--focused {
+
+	.FormInput__fieldset {
+		border-width: 2px;
+	}
+
+}
+
+.FormInput--focused, .FormInput--autofilled, .FormInput--has-value:not(.FormInput--hide-value), .FormInput--inline-label {
+
+	.FormInput__label {
+		top: 0!important;
+		font-size: .75em;
+	}
+
+	.FormInput__fieldset {
+		legend {
+			width: auto;
+			padding: 0 4px;
+		}
+	}
+
+}
+
+.FormInput--valid {
+
+	.FormInput__label {
+		color: $primary;
+	}
+
+	.FormInput__fieldset {
+		border-color: $primary;
+	}
+
+}
+
+.FormInput--error {
+
+	.FormInput__label {
+		color: $danger;
+	}
+
+	.FormInput__fieldset {
+		border-color: $danger;
+	}
+
+}

@@ -1,0 +1,33 @@
+{
+  "name": "mstaff-micro__storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-vue": "^2.23.1",
+    "vue": "^2.7.14",
+    "vue-multiselect": "^2.1.6"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/vue": "^6.5.16",
+    "babel-loader": "^8.3.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^8.0.2",
+    "vue-loader": "^15.10.1"
+  }
+}

@@ -1,0 +1,16 @@
+.alert {
+	color: $body-color;
+
+	&.alert-info {
+		background-color: $blue-0;
+	}
+	&.alert-success {
+		background-color: $green-0;
+	}
+	&.alert-warning {
+		background-color: $yellow-0;
+	}
+	&.alert-danger {
+		background-color: $red-0;
+	}
+}

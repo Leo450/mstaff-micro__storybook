@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+  dev:
+    container_name: mstaff-micro__storybook
+    build: docker/dev
+    working_dir: /application
+    ports:
+      - '23000:6006'
+    volumes:
+      - .:/application
+    networks:
+      - mstaff-micro.network
+
+networks:
+  mstaff-micro.network:
+    external: true

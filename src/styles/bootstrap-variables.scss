@@ -1,0 +1,37 @@
+@import "variables/colors";
+
+$body-color: #212529;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$headings-font-family: 'Figtree', sans-serif;
+$headings-font-weight: 700;
+$headings-margin-bottom: 0;
+$paragraph-margin-bottom: 0;
+$link-hover-decoration: none;
+$link-color: $body-color;
+
+// Components
+$border-radius: 8px;
+$border-radius-lg: 8px;
+$border-radius-sm: 8px;
+
+// Buttons
+$btn-font-weight: bold;
+$btn-padding-y: 10px;
+$btn-padding-x: 12px;
+$btn-padding-y-sm: 8px;
+$btn-padding-x-sm: 12px;
+$btn-padding-y-lg: 12px;
+$btn-padding-x-lg: 12px;
+
+// Alert
+$alert-border-level: 0;
+
+// Breadcrumb
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+$breadcrumb-bg: transparent;
+
+// Form
+$custom-checkbox-indicator-border-radius: 4px;
