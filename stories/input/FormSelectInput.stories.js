@@ -1,7 +1,7 @@
 import FormSelectInput from '../../src/components/input/FormSelectInput'
 
 export default {
-	title: 'Form/FormSelectInput',
+	title: 'Design System/data-entry/FormSelectInput',
 	component: FormSelectInput
 }
 

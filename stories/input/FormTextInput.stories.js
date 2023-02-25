@@ -1,7 +1,7 @@
 import FormTextInput from '../../src/components/input/FormTextInput'
 
 export default {
-	title: 'Form/FormTextInput',
+	title: 'Design System/data-entry/FormTextInput',
 	component: FormTextInput,
 	argTypes: {
 		state: {
