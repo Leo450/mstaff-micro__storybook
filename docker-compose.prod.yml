@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  nginx:
+    container_name: mstaff-micro__storybook__prod__nginx
+    image: nginx:alpine
+    volumes:
+      - ./docker/prod/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./storybook-static:/application
+    networks:
+      - mstaff-micro.network
+
+networks:
+  mstaff-micro.network:
+    external: true
